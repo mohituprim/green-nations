@@ -13,6 +13,7 @@ import { MenuService } from "fw/services/menu.service";
 import { MenuComponent } from "fw/menus/menu/menu.component";
 import { MenuItemComponent } from "fw/menus/menu-item/menu-item.component";
 import { RouterModule } from "@angular/router";
+import { PopupMenuComponent } from "fw/menus/popup-menu/popup-menu.component";
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { RouterModule } from "@angular/router";
                  ScreenLarge,
                  ScreenBelowLarge,
                  MenuComponent,
-                 MenuItemComponent],
+                 MenuItemComponent,
+                 PopupMenuComponent],
   providers: [FrameworkConfigService,
               ScreenService,
               MenuService
