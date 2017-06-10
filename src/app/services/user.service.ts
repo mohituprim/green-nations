@@ -20,7 +20,7 @@ export class UserService implements UserApi {
 
   signOut(): Observable<any> {
       this.isAuthenticated = false;
-      console.log('UserService.signoUT');
+      //console.log('UserService.signoUT');
       this.router.navigate(['/signin']);
       return Observable.of({});
   }
